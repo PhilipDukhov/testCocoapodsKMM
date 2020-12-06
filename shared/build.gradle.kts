@@ -24,7 +24,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                //  TODO 2 uncomment implementation
+                //  TODO 1 uncomment implementation
 //                implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.20")
             }
         }

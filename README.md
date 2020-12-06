@@ -62,7 +62,7 @@ BUILD SUCCESSFUL in 47s
 ```
 expected behavior: cinterop tasks should be UP-TO-DATE, both because nothing related changed, and because we just processed same tasks in step 2.
 
-4. [TODO 2](shared/build.gradle.kts#L27): uncomment dependency in project gradle, then `sync`:
+4. [TODO 2](build.gradle.kts#L12): uncomment dependency in project gradle, then `sync`:
 
 ```
 > Task :shared:generateDefFBSDKCoreKit
