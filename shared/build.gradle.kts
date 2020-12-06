@@ -8,13 +8,20 @@ version = "1.0-SNAPSHOT"
 
 kotlin {
     android()
-    ios()
+    val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
+    if (onPhone) {
+        iosArm64("ios")
+    } else {
+        iosX64("ios")
+    }
     cocoapods {
         frameworkName = "Shared"
         summary = frameworkName
         homepage = "-"
         license = "-"
         ios.deploymentTarget = "13.0"
+
+        pod("GoogleSignIn", version = "5.0.2")
     }
     sourceSets {
         val commonMain by getting {

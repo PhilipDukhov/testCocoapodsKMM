@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
     spec.ios.deployment_target = '13.0'
 
-                
+    spec.dependency 'GoogleSignIn', '5.0.2'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
