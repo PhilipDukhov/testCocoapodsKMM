@@ -15,11 +15,17 @@ kotlin {
         homepage = "-"
         license = "-"
         ios.deploymentTarget = "13"
+
+        pod("Firebase/Core", version = "7.1.0", moduleName = "FirebaseCore")
+        pod("GoogleSignIn", version = "5.0.2")
+        pod("FBSDKLoginKit", version = "8.2.0")
+        pod("FBSDKCoreKit", version = "8.2.0")
     }
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.20")
+                //  TODO 2 uncomment implementation
+//                implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.20")
             }
         }
         val androidMain by getting {
