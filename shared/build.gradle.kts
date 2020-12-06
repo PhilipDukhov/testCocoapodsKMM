@@ -14,7 +14,7 @@ kotlin {
         summary = frameworkName
         homepage = "-"
         license = "-"
-        ios.deploymentTarget = "13"
+        ios.deploymentTarget = "13.0"
     }
     sourceSets {
         val commonMain by getting {

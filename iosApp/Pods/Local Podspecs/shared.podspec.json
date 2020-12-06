@@ -14,21 +14,7 @@
   "libraries": "c++",
   "module_name": "shared_umbrella",
   "platforms": {
-    "ios": "13"
-  },
-  "dependencies": {
-    "FBSDKCoreKit": [
-      "8.2.0"
-    ],
-    "FBSDKLoginKit": [
-      "8.2.0"
-    ],
-    "Firebase/Core": [
-      "7.1.0"
-    ],
-    "GoogleSignIn": [
-      "5.0.2"
-    ]
+    "ios": "13.0"
   },
   "pod_target_xcconfig": {
     "KOTLIN_TARGET[sdk=iphonesimulator*]": "ios_x64",

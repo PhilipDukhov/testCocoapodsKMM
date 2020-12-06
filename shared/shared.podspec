@@ -12,12 +12,9 @@ Pod::Spec.new do |spec|
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-    spec.ios.deployment_target = '13'
+    spec.ios.deployment_target = '13.0'
 
-    spec.dependency 'FBSDKCoreKit', '8.2.0'
-    spec.dependency 'FBSDKLoginKit', '8.2.0'
-    spec.dependency 'Firebase/Core', '7.1.0'
-    spec.dependency 'GoogleSignIn', '5.0.2'
+                
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
