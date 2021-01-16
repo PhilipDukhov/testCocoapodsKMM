@@ -3,5 +3,4 @@ target 'iosApp' do
   use_frameworks!
 
   pod 'shared', :path => '../shared'
-#  pod 'shared2', :path => '../shared2'
 end
